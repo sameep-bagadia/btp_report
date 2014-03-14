@@ -1,0 +1,12 @@
+Extending Cycle Shrinking Transformation for Constant Distances
+Abstract
+Introduction (cycle shrinking algorithm for constant distances)
+Intuition of possible optimization
+Representing a partition of the iteration space by a set of points (notation)
+Algorithm for generating these points that represent partitions
+Proof of correctness (source and sink never lie in same partition)
+Proof of optimality (partition created is maximal. Even if single iteration point is added to the partition, then at least one source-sink pair belongs to same partition)
+Method to find the number of partitions required. (without actually creating the partitions)
+Construct the iteration space of a partition in terms of for-all loops from the set of points that represent the partition (only if time permits. the algorithm is not yet done)
+Conclusion / Future Work
+References

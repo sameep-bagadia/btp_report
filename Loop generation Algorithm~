@@ -1,0 +1,57 @@
+/*
+A, B are the sets of points representing partition P(A, B) which we are characterizing by loops using the algorithm
+boundaries contains the upper limit of the index variables
+l denotes the current loop nest level.
+*/
+Algorithm generate_loop (A, B, boundaries, l) {
+
+	A = sort_and_dominate(A)
+	B = sort_and_dominate(B)
+
+	//BASE CASE
+	if A and B have points with only 1 dimension then {
+		start = A.first()[0];
+		if (B is empty) {
+			end = boundarie[l];
+		}
+		else {
+			end = B.first()[0] - 1;
+		}
+		put forall i_l = start to end
+		put all the statements to be executed here.
+		put endall
+
+		return;
+	}
+	
+	A' = empty
+	B' = empty
+	start = min (A.first()[0], B.first())
+	
+	while (A is not empty or B is not empty) {
+		
+		while (A.first()[0] == start) {
+			remove first point from A and put it in A' after removing the first dimension from it
+			// eg: if first point is (2, 4, 1), then put (4, 1) in A'
+		}
+		while (B.first()[0] == start) {
+			remove first point from B and put it in B' after removing the first dimension from it
+		}
+
+		if (both A and B are empty) {
+			end = boundaries[l];
+		}
+		else {
+			end = min(A.first()[0], B.first()[0]) - 1;
+		}
+
+		put forall i_l = start to end
+		generate_loop (A', B', boundaries, l+1);
+		put endall
+
+		start = end + 1
+	}
+}	
+
+sort_and_dominate() sorts all the points on the first dimension and also removes redundant points, i.e., if a,b belongs A and a <= b then b is removed from A
+	

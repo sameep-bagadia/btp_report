@@ -1,0 +1,14 @@
+We may need to find the number of partitions required in this algorithm without actually creating partitions so as to get an idea of how much parallelization is possible in the loop.
+The method is given below.
+
+Let the loop bounds be from 0 to (n_i - 1) for loop nest i
+Let the d_1, d_2, ... , d_k be the elements of set S
+
+Then the optimal value of the following set of linear inequalities gives the number of partitions
+
+maximize x_1 + x_2 + .. + x_k + 1
+subject to
+sigma x_j * d_j < n_i for each loop nest i
+x_j >= 0 for each j
+
+By giving the linear optimization problem to a solver, the optimal value is the number of partitions required. 

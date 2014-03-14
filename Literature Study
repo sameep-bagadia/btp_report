@@ -1,0 +1,32 @@
+1) Cycle Shrinking Algorithm
+
+A data dependence graph is a directed graph with with each statement as a vertex and an edge from statement Si to Sj if there is a dependence Si delta Sj.
+If there are cycles no in the DDG then there are many parallelizaton techniques that can be applied. But if there is a cycle then straightforward parallelization cannot be done. In such cases cycle shrinking can be used. 
+Cycle shrinking algorithm allows loops with cyclic data dependencies to be partially parallelized when the dependence distances are known.
+Dependence distance : minimum distance between source and sink for a dependence is known as dependence distance. This is a vector for nested loops.
+
+The idea of cycle shrinking has been extended in three ways:
+a) Simple shrinking : minimum dependence distance for each nest level is calculated separately and then partitions are created based in these values.
+b) Selective shrinking : outermost level with positive dependence distance is selected and then simple shrinking is applied only at this level. All lower level loops are changed to do-all loops
+c) True distance shrinking : The partition is made based on the actual number of iterations between the source and the sink ("true distance") of the dependencies considering the loop bounds at each nest level.
+
+However, a greater degree of parallelism can be achieved if the partitions are made as shown in the figure. It reduces the number of partitions.
+Extended cycle shrinking creates parition in this manner.
+
+2) Extended Cycle Shrinking Algorithm
+
+A) Constant Distances:
+Consider the case where there are only constant dependence distances.
+
+Dependence distance vector phi(L) for the entire loop is calculated as follows:
+for kth component:
+phi_k(L) = { 3 cases }
+
+Then the partitions are created using this dependence distance.
+as shown in the example
+the apex points are k*phi_i if phi_i > 0
+else other side
+
+B) Variable distances:
+
+

@@ -1,0 +1,43 @@
+\chapter{Method to calculate the number of partitions}
+We may need to find the number of partitions required in this algorithm without actually creating partitions so as to get an idea of how much parallelization is possible in the loop.
+The method for that is given below. \\
+
+Let the loop bounds be from 0 to $(n_i - 1)$ for loop nest i. \\
+Let $d^1, d^2, ... , d^k$ be the elements of set D \\
+
+The optimal value of the following integer linear optimization problem gives the number of partitions: \\
+
+\noindent maximize $x_1 + x_2 + .. + x_k + 1$ \\
+subject to \\
+\indent $ \Sigma_{j=1}^{k} d_{i}^{j} * x_j  < n_i$ for each loop nest i \\
+\indent $ x_j \geq 0$  $\forall j$ \\
+\indent All $x_j$ are integral. \\ 
+
+By giving the above linear optimization problem to a solver, the optimal value caluclated is the number of partitions required.
+
+
+\subsection{Example}
+Consider the same example,  \\
+DO I = 0 to 9 \\
+\indent DO J = 0 to 9 \\
+\indent \indent A[I+1, J+4] = B[I, J] \\
+\indent \indent C[I+2, J+2] = A[I, J] \\
+\indent \indent B[I+3, J+1] = C[I, J] \\
+\indent ENDO \\
+ENDO \\
+
+\noindent $d^1 = (1, 4)$ \\
+$d^2 = (2, 2)$ \\
+$d^3 = (3, 1)$ \\
+$n_1 = 10$ \\
+$n_2 = 10$ \\
+
+The linear optimization problem for this case is: \\
+maximize $x_1 + x_2 + x_3 + 1$ \\
+subject to \\
+\indent $ 1 * x_1 + 2 * x_2 + 3 * x_3 < 10 $ \\
+\indent $ 4 * x_1 + 2 * x_2 + 1 * x_3 < 10 $ \\
+\indent $ x_1 \geq 0 $ \\
+\indent $ x_2 \geq 0 $ \\
+\indent $ x_3 \geq 0 $ \\
+\indent $x_1, x_2, x_3$ are integral. \\

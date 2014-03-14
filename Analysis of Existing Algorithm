@@ -1,0 +1,8 @@
+Dominating reference pairs:
+A reference pair Ri dominates another reference pair Rj if 3 cases actually phi_k(R_i) <= phi_k(R_j) for all k
+A reference pair R_i is called dominating reference pair if it dominates all other reference pairs in the loop.
+
+A loop that doesn't have dominating reference pair will not be partitioned in an optimal way by the cycle shrinking algorithm.
+Consider example
+
+Thus there is a better method for partition. We will give a method to capture that paritioning

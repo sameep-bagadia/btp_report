@@ -1,0 +1,34 @@
+For this we denote a partition by two sets of points belonging to the iteration space, set A and set B
+Let us call the partition P(A,B)
+iteration point a is said to dominate iteration point b if for all k, a_k <= b_k
+We denote it by a <= b.
+
+All iteration points that are dominated by at least one iteration point in set A and are not dominated by any iteration point from set B belong to the parition denoted by A and B
+P(A,B) = {x | (there exists a belongs A, a <= x) and (for all b belongs B, b !<= x)}
+
+For the given example, partition 1 is given by so and so .....
+Thus n partitions can be given by n+1 set of points.
+
+Algorithm to genererate the set of points:
+
+We give an iterative algorithm which given a set of points, generates the next set.
+Let the sets be called A_0, A_1, .. ,A_k
+
+1)
+Consider the set of all the reference pairs of the loop. Create a minimal set of reference pairs by removing any reference pair that is dominated by another reference pair in the set.
+Thus in the minimal set, no reference pair dominates any other reference pair. Call this set S
+
+2)
+Set A_0 = {(0,0,..,0)}
+iter = 0;
+while(A_iter is not empty) {
+	iter++;
+	set B = {}
+	for every a belongs A_(iter-1) and every s belongs S, insert a+s in B
+	Create a minimal set of B, by removing any iteration point from B if there exists another iteration point dominating it.
+	Thus in the final set obtained no iteration point dominates another point.
+	Set A_iter as this minimal set obtained
+}
+
+
+

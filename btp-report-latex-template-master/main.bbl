@@ -1,0 +1,97 @@
+% $ biblatex auxiliary file $
+% $ biblatex version 1.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\entry{allenoptimizing}{book}{}
+  \name{author}{2}{}{%
+    {{}%
+     {Allen}{A.}%
+     {Randy}{R.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {Kennedy}{K.}%
+     {Ken}{K.}%
+     {}{}%
+     {}{}}%
+  }
+  \list{publisher}{1}{%
+    {Elsevier Pub}%
+  }
+  \strng{namehash}{ARKK1}
+  \strng{fullhash}{ARKK1}
+  \field{title}{Optimizing Compilers for Modern Architectures. 2002}
+\endentry
+
+\entry{cycle1}{article}{}
+  \name{author}{1}{}{%
+    {{}%
+     {Polychronopoulos}{P.}%
+     {C.D.}{C.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{PC1}
+  \strng{fullhash}{PC1}
+  \verb{doi}
+  \verb 10.1109/12.2249
+  \endverb
+  \field{issn}{0018-9340}
+  \field{number}{8}
+  \field{pages}{991\bibrangedash 1004}
+  \field{title}{Compiler optimizations for enhancing parallelism and their
+  impact on architecture design}
+  \field{volume}{37}
+  \field{journaltitle}{Computers, IEEE Transactions on}
+  \field{year}{1988}
+\endentry
+
+\entry{extended}{article}{}
+  \name{author}{3}{}{%
+    {{}%
+     {SETHI}{S.}%
+     {AJAY}{A.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {BISWAS}{B.}%
+     {SUPRATIM}{S.}%
+     {}{}%
+     {}{}}%
+    {{}%
+     {SANYAL}{S.}%
+     {AMITABHA}{A.}%
+     {}{}%
+     {}{}}%
+  }
+  \strng{namehash}{SABSSA1}
+  \strng{fullhash}{SABSSA1}
+  \verb{doi}
+  \verb 10.1142/S0129053395000154
+  \endverb
+  \field{number}{02}
+  \field{pages}{265\bibrangedash 284}
+  \field{title}{EXTENSIONS TO CYCLE SHRINKING}
+  \field{volume}{07}
+  \field{journaltitle}{International Journal of High Speed Computing}
+  \field{year}{1995}
+\endentry
+
+\lossort
+\endlossort
+
+\endinput

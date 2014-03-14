@@ -1,0 +1,66 @@
+1) Correctness
+We need to prove that a source and sink can never lie in the same partition.
+
+Proof:
+Suppose there exists a source u and sink v that lie in the same partition.
+Consider the dependence distance between them to be d.
+Thus v = u + d
+Consider d' <= d and d' belongs S
+
+Lemma: There always exists such d'
+[
+If d belongs S then d = d'
+else as d was removed from the set of dependence distances, there must exist another dependence distance dominating d.
+]
+
+v' = u + d'
+u, v' are another source sink pair
+
+Lemma: If u, v lie in same partition then u and v' also
+[
+Let u,v lie in P(A,B)
+Therefore, there exists a belongs A , a <= u
+As a <= u <= v', a <= v'
+
+Suppose v' does not belong to P.
+Then there exists b belongs B, b <= v'
+d' <= d
+d' + u <= d + u
+v' <= v 
+Thus, b <= v' <= v 
+thus, b <= v
+which implies that v does not belong to P. Therefore our assumption is false. 
+v' belongs to P
+]
+
+As, u, v' belong P(A,B)
+there exists a belongs A, st a <= u
+by the way in whcih partitions are created,
+there exists b belongs B, st b <= a + d'
+a <= u
+a + d' <= u + d'
+b <= a + d' <= v'
+b <= v'
+Thus it implies v does not belongs to P(A,B) which is a contradiction.
+
+Thus, our assumption is false. There exists no u, v belonging to same partition.
+
+
+
+
+2) OPTIMALITY
+Even if a single iteration point from the next partition is added to this partition, it will lead to both source and sink belonging to same partition.
+
+Suppose the partitions we created are not optimal.
+Therefore there exists a point y which is in the next partition of P(A,B) which can be added to P(A,B). i.e it has no source in P(A,B).
+
+As y is not in P(A,B), there exists b belongs B, b <= y
+By the way in which partitions are created, there exists d belongs S and a belongs A, a + d = b
+Let x = y - d
+As b <= y, b - d <= y - d
+a <= x
+This means that x belongs to partition P(A,B)
+x and y form a source-sink pair. Therefore is a source of y in P(A,B).
+Therefore our assumption is false.
+
+Thus partitions thus created are optimal.
