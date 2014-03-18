@@ -44,12 +44,6 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {7.1}Algorithm}{17}{section.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.1.1}Example}{19}{subsection.7.1.1}
+\contentsline {chapter}{\numberline {8}Future Work}{20}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Algorithm to generate the sets of points}{19}{section.7.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {7.2.1}Example}{20}{subsection.7.2.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Future Work}{22}{chapter.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{i}{chapter*.9}
+\contentsline {chapter}{Bibliography}{i}{chapter*.7}
