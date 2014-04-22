@@ -5,7 +5,7 @@ Literature Survey
 		constant dependences
 		variable dependences              
 Analysis of Extended Cycle Shrinking
-Our Algorithm
+Optimal Partitioning Algorithm
 	Notation
 	Algorithm
 	Proof of correctness and optimality

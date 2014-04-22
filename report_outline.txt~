@@ -16,6 +16,6 @@ Loop Generation Algorithm
 	Algorithm
 	Proof of correctness
 Variable Dependence Distance case
-Parallelizing the algorithm
 Handling negative dependence distances
+Parallelizing the algorithm
 Future Work

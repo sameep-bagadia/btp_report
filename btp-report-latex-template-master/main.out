@@ -5,20 +5,20 @@
 \BOOKMARK [2][-]{subsection.2.1.1}{Example}{section.2.1}% 5
 \BOOKMARK [1][-]{section.2.2}{Extended Cycle Shrinking Algorithm}{chapter.2}% 6
 \BOOKMARK [2][-]{subsection.2.2.1}{Constant Dependence Distances}{section.2.2}% 7
-\BOOKMARK [0][-]{chapter.3}{Analysis of Extended Cycle Shrinking Algorithm}{}% 8
-\BOOKMARK [0][-]{chapter.4}{Our Algorithm}{}% 9
-\BOOKMARK [1][-]{section.4.1}{Notation}{chapter.4}% 10
-\BOOKMARK [2][-]{subsection.4.1.1}{Example}{section.4.1}% 11
-\BOOKMARK [1][-]{section.4.2}{Algorithm to generate the sets of points}{chapter.4}% 12
-\BOOKMARK [2][-]{subsection.4.2.1}{Example}{section.4.2}% 13
-\BOOKMARK [0][-]{chapter.5}{Proof of correctness and optimality}{}% 14
-\BOOKMARK [1][-]{section.5.1}{Correctness}{chapter.5}% 15
-\BOOKMARK [2][-]{subsection.5.1.1}{Proof of Lemma 1}{section.5.1}% 16
-\BOOKMARK [2][-]{subsection.5.1.2}{Proof of Lemma 2}{section.5.1}% 17
-\BOOKMARK [1][-]{section.5.2}{Optimality}{chapter.5}% 18
-\BOOKMARK [0][-]{chapter.6}{Method to calculate the number of partitions}{}% 19
-\BOOKMARK [1][-]{subsection.6.0.1}{Example}{chapter.6}% 20
-\BOOKMARK [0][-]{chapter.7}{Loop Generation Algorithm}{}% 21
-\BOOKMARK [1][-]{section.7.1}{Algorithm}{chapter.7}% 22
-\BOOKMARK [0][-]{chapter.8}{Future Work}{}% 23
-\BOOKMARK [0][-]{chapter*.7}{Bibliography}{}% 24
+\BOOKMARK [2][-]{subsection.2.2.2}{Variable Dependence Distances}{section.2.2}% 8
+\BOOKMARK [0][-]{chapter.3}{Analysis of Extended Cycle Shrinking Algorithm}{}% 9
+\BOOKMARK [0][-]{chapter.4}{Optimal Partitioning Algorithm}{}% 10
+\BOOKMARK [1][-]{section.4.1}{Notation}{chapter.4}% 11
+\BOOKMARK [2][-]{subsection.4.1.1}{Example}{section.4.1}% 12
+\BOOKMARK [1][-]{section.4.2}{Algorithm to generate the sets of points}{chapter.4}% 13
+\BOOKMARK [2][-]{subsection.4.2.1}{Example}{section.4.2}% 14
+\BOOKMARK [1][-]{section.4.3}{Proof of Correctness}{chapter.4}% 15
+\BOOKMARK [2][-]{subsection.4.3.1}{Proof of Lemma 1}{section.4.3}% 16
+\BOOKMARK [2][-]{subsection.4.3.2}{Proof of Lemma 2}{section.4.3}% 17
+\BOOKMARK [1][-]{section.4.4}{Proof of Optimality}{chapter.4}% 18
+\BOOKMARK [0][-]{chapter.5}{Method to calculate the number of partitions}{}% 19
+\BOOKMARK [1][-]{subsection.5.0.1}{Example}{chapter.5}% 20
+\BOOKMARK [0][-]{chapter.6}{Loop Generation Algorithm}{}% 21
+\BOOKMARK [1][-]{section.6.1}{Algorithm}{chapter.6}% 22
+\BOOKMARK [0][-]{chapter.7}{Future Work}{}% 23
+\BOOKMARK [0][-]{chapter*.9}{Bibliography}{}% 24

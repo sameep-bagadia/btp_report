@@ -1,7 +1,7 @@
 1) Cycle Shrinking Algorithm
 
 A data dependence graph is a directed graph with with each statement as a vertex and an edge from statement Si to Sj if there is a dependence Si delta Sj.
-If there are cycles in the DDG then there are many parallelizaton techniques that can be applied. But if there is a cycle then straightforward parallelization cannot be done. In such cases cycle shrinking can be used. 
+If there are cycles no in the DDG then there are many parallelizaton techniques that can be applied. But if there is a cycle then straightforward parallelization cannot be done. In such cases cycle shrinking can be used. 
 Cycle shrinking algorithm allows loops with cyclic data dependencies to be partially parallelized when the dependence distances are known.
 Dependence distance : minimum distance between source and sink for a dependence is known as dependence distance. This is a vector for nested loops.
 
@@ -16,7 +16,7 @@ Extended cycle shrinking creates parition in this manner.
 2) Extended Cycle Shrinking Algorithm
 
 A) Constant Distances:
-Consider the case where all reference pairs have constant dependence distances.
+Consider the case where there are only constant dependence distances.
 
 Dependence distance vector phi(L) for the entire loop is calculated as follows:
 for kth component:
@@ -27,6 +27,12 @@ as shown in the example
 the apex points are k*phi_i if phi_i > 0
 else other side
 
+B) Variable distances:
 
+In the case of variable dependence distances, only those cases are considered where each source can have only one sink for a given reference pair. Unlike in the constant dependence distance case, here the dependence distaces vary with the indices. Dependence distance is function of loop indices in this case.
+Thus, instead of summarizing the dependence for the entire loop, the summarization is done at each apex.
 
+As shown in the figure, apex1 is the initial apex point. We obtain apex2' and apex2'' as sinks of apex1. Then the sinks of all sources inside the cone of apex1 lie inside the cones formed by apex2' and apex2''. We summarize these two apexes to obtain apex2 as the next apex point in the partition. This procedure is repeateed to obtain subsequent apex points. Once the apex points are known, the partitions are created in similar way as was done in the constant dependence distance case.
+
+Example
 

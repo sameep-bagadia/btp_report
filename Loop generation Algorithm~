@@ -18,7 +18,7 @@ Algorithm generate_loop (A, B, boundaries, l) {
 			end = B.first()[0] - 1;
 		}
 		put forall i_l = start to end
-		put all the statements to be executed here.
+		put all the statements to be executed
 		put endall
 
 		return;
@@ -53,5 +53,12 @@ Algorithm generate_loop (A, B, boundaries, l) {
 	}
 }	
 
-sort_and_dominate() sorts all the points on the first dimension and also removes redundant points, i.e., if a,b belongs A and a <= b then b is removed from A
+sort_and_dominate() sorts all the points on the first dimension and also removes redundant points, i.e., if a,b belongs A and a <= b then b is removed from A.
+
+
+Example:
+
+Proof:
+
+
 	
