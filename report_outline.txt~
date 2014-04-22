@@ -1,11 +1,21 @@
-Extending Cycle Shrinking Transformation for Constant Distances
-1. Abstract
-2. Introduction (cycle shrinking algorithm for constant distances)
-3. Intuition of possible optimization
-4. Algorithm for generating points that represent partitions in the iteration space
-5. Proof of correctness (source and sink never lie in same partition)
-6. Proof of optimality (partition created is maximal and even if single iteration point is added to the partition, then at least one source-sink pair belongs to same partition)
-7. Method to find the number of partitions required.
-8. Construct the iteration space of a partition in terms of for-all loops from the set of points that represent the partition (only if time permits. the algorithm is not yet done)
-9. Conclusion / Future Work
-10. References
+Abstract
+Literature Survey
+	Cycle Shrinking
+	Extended cycle shrinking
+		constant dependences
+		variable dependences              
+Analysis of Extended Cycle Shrinking
+Our Algorithm
+	Notation
+	Algorithm
+	Proof of correctness and optimality
+		Correctness
+		Optimality
+Method to calculate number of partitions
+Loop Generation Algorithm     
+	Algorithm
+	Proof of correctness
+Variable Dependence Distance case
+Parallelizing the algorithm
+Handling negative dependence distances
+Future Work

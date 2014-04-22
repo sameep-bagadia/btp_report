@@ -54,4 +54,8 @@ Algorithm generate_loop (A, B, boundaries, l) {
 }	
 
 sort_and_dominate() sorts all the points on the first dimension and also removes redundant points, i.e., if a,b belongs A and a <= b then b is removed from A.
+
+
+Example:
+
 	
