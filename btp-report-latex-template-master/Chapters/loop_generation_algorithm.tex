@@ -1,50 +1,64 @@
 \chapter{Loop Generation Algorithm}
 We have given an algorithm to find the sets of points that can determine the optimal partitions. Now we give an algorithm to generate actual loops given these sets of points. \\
 
+\section{Notation}
+
+generate\_loop() takes two sets of points A and B as input and outputs the loops representing P(A, B) \\
+
+A, B are ordered sets of points. The ordering is based on ascending order of first dimension of the points. A.first() gives the first point in the ordered set A. Point is a vector of indices. \\
+
+A.insert(a) inserts the point a in the ordered set A. A.remove() removes the first point from set A. \\
+
+remove\_first(a) removes the first dimension from the vector. For example, remove\_first([1,2,3,4]) returns [2,3,4]. \\
+
+dominate(A) removes redundant points from A. All points in set A that are dominated by some other point in A are removed from A. i.e., \\
+if ($a,b \in A$ and $a \preceq b$) then b is removed from A. \\
+
+boundaries is a vector of upper bound of loop indices.\\
+
+l denotes the current loop nest level. It should be initially called with 0. \\
+
+
 \section{Algorithm}
 
 
 generate\_loop (A, B, boundaries, l) \{ \\
 
-\noindent /* \\
-generate\_loop takes two sets of points as input and outputs the loops representing P(A, B) \\
-
-\noindent A, B are the sets of points representing partition P(A, B) \\
-boundaries contains the upper limit of the index variables \\
-l denotes the current loop nest level. \\
-*/ \\
-
-\indent	A = sort\_and\_dominate(A) \\
-\indent	B = sort\_and\_dominate(B) \\
+\indent	A = dominate(A) \\
+\indent	B = dominate(B) \\
 
 \indent	//BASE CASE \\
 \indent	if A and B have points with only 1 dimension then \{ \\
 \indent \indent		start = A.first()[0]; \\
-\indent		if (B is empty) \{ \\
-\indent\indent			end = boundarie[l]; \\
-\indent		\} \\
-\indent		else \{ \\
-\indent\indent			end = B.first()[0] - 1; \\
-\indent		\} \\
-\indent		put forall $i_l$ = start to end \\
-\indent		put all the statements to be executed \\
-\indent		put endall \\
+\indent \indent		if (B is empty) \{ \\
+\indent\indent	 \indent		end = boundaries[l]; \\
+\indent \indent		\} \\
+\indent \indent		else \{ \\
+\indent\indent	 \indent		end = B.first()[0] - 1; \\
+\indent \indent		\} \\
+\indent \indent		put FORALL $i_l$ = start to end \\
+\indent \indent		put statements block inside the loop to be executed \\
+\indent \indent		put ENDALL \\
 
-\indent		return; \\
+\indent \indent		return; \\
 \indent	\} \\
 	
-\indent	A' = empty \\
-\indent	B' = empty \\
+\indent	A' = \{\} \\
+\indent	B' = \{\} \\
 \indent	start = min (A.first()[0], B.first()) \\
+
+\indent put PARBEGIN statement\\
 	
 \indent	while (A is not empty or B is not empty) \{ \\
 		
 \indent\indent		while (A.first()[0] == start) \{ \\
-\indent\indent\indent			remove first point from A and put it in A' after removing the first dimension from it \\
-\indent\indent\indent			// eg: if first point is (2, 4, 1), then put (4, 1) in A' \\
+\indent\indent\indent			A'.insert(remove\_first(A.first())) \\
+\indent\indent\indent			A.remove() \\
+\indent\indent\indent			// eg: if first point in A is (2, 4, 1), then put (4, 1) in A' \\
 \indent\indent		\} \\
 \indent\indent		while (B.first()[0] == start) \{ \\
-\indent\indent\indent			remove first point from B and put it in B' after removing the first dimension from it \\
+\indent\indent\indent			B'.insert(remove\_first(B.first())) \\
+\indent\indent\indent			B.remove() \\
 \indent\indent		\} \\
 
 \indent\indent		if (both A and B are empty) \{ \\
@@ -54,13 +68,141 @@ l denotes the current loop nest level. \\
 \indent\indent\indent			end = min(A.first()[0], B.first()[0]) - 1; \\
 \indent\indent		\} \\
 
-\indent\indent		put forall $i_l$ = start to end \\
+\indent\indent		put FORALL $i_l$ = start to end \\
 \indent\indent		generate\_loop (A', B', boundaries, l+1); \\
-\indent\indent		put endall \\
+\indent\indent		put ENDALL \\
 
 \indent\indent		start = end + 1 \\
 \indent	\} \\
+\indent put PAREND statement\\
 \} \\	
 
-sort\_and\_dominate() sorts all the points on the first dimension and also removes redundant points, i.e., if a,b belongs A and a <= b then b is removed from A.
+\section{Example}
+
+Consider the following example: \\
+DO I = 0 to 9 \\
+\indent DO J = 0 to 9 \\
+\indent \indent DO K = 0 to 9 \\
+\indent \indent \indent \{Block of statements\} \\
+\indent \indent ENDO \\
+\indent ENDO \\
+ENDO \\
+
+\noindent In this case, boundaries = (9, 9, 9) \\
+Let A = \{(1, 4, 1), (5, 1, 3)\} and B = \{(4, 6, 7), (7, 2, 5)\} \\
+
+\noindent generate\_loop(A, B, boundaries, 0) generates the following code: \\
+
+\noindent PARBEGIN \\
+FORALL I = 1 to 3\\
+\indent PARBEGIN\\
+\indent FORALL J = 4 to 9\\
+\indent \indent FORALL K = 1 to 9\\
+\indent \indent \indent \{Block of statements\}\\
+\indent \indent ENDALL\\
+\indent ENDALL\\
+\indent PAREND\\
+ENDALL\\
+FORALL I = 4 to 4\\
+\indent PARBEGIN\\
+\indent FORALL J = 4 to 5\\
+\indent \indent FORALL K = 1 to 9\\
+\indent \indent \indent \{Block of statements\}\\
+\indent \indent ENDALL\\
+\indent ENDALL\\
+\indent FORALL J = 6 to 9\\
+\indent \indent FORALL K = 1 to 6\\
+\indent \indent \indent \{Block of statements\} \\
+\indent \indent ENDALL\\
+\indent ENDALL\\
+\indent PAREND\\
+ENDALL\\
+FORALL I = 5 to 6 \\
+\indent PARBEGIN\\
+\indent FORALL J = 1 to 3\\
+\indent \indent FORALL K = 3 to 9\\
+\indent \indent \indent \{Block of statements\}\\
+\indent \indent ENDALL\\
+\indent ENDALL\\
+\indent FORALL J = 4 to 5\\
+\indent \indent FORALL K = 1 to 9\\
+\indent \indent \indent \{Block of statements\}\\
+\indent \indent ENDALL\\
+\indent ENDALL\\
+\indent FORALL J = 6 to 9\\
+\indent \indent FORALL K = 1 to 6\\
+\indent \indent \indent \{Block of statements\}\\
+\indent \indent ENDALL\\
+\indent ENDALL\\
+\indent PAREND\\
+ENDALL\\
+FORALL I = 7 to 9\\
+\indent PARBEGIN\\
+\indent FORALL J = 1 to 1\\
+\indent \indent FORALL K = 3 to 9\\
+\indent \indent \indent \{Block of statements\}\\
+\indent \indent ENDALL\\
+\indent ENDALL\\
+\indent FORALL J = 2 to 3\\
+\indent \indent FORALL K = 3 to 4\\
+\indent \indent \indent \{Block of statements\}\\
+\indent \indent ENDALL\\
+\indent ENDALL\\
+\indent FORALL J = 4 to 9\\
+\indent \indent FORALL K = 1 to 4\\
+\indent \indent \indent \{Block of statements\}\\
+\indent \indent ENDALL\\
+\indent ENDALL\\
+\indent PAREND\\
+ENDALL\\
+PAREND\\
+
+
+
+
+
+\section{Proof of Correctness}
+
+\subsection{Notation}
+
+[a:b] denotes the vector obtained on inserting element a at front of vector b.
+For example [1:(2, 3, 4)] denotes (1, 2, 3, 4)
+
+\subsection{Lemma1}
+If $a > b$ \\
+then $\forall x, y: not([a:x] \preceq [b:y]$\\
+
+\subsection{Lemma2}
+If $a \preceq b$ and $x \leq y$ \\
+then $[x:a] \preceq [y:b]$\\
+
+\subsection{Lemma3}
+If $not(a \preceq b)$\\
+then $\forall x,y: not([x:a] \preceq [y:b])$\\
+
+\subsection{Proof}
+
+We need to prove that set of points in P(A, B) and those generated by this algorithm are same. \\
+Here $P(A,B) = \{x | ( \exists a \in A, a \preceq x) and (\forall b \in B, not(b \preceq x))\}$ \\
+The proof is based on induction on the dimension of the points.\\
+
+Base case (dimension = 1) :\\
+When dimension is one, there can be exactly one point (say a) in set A and at most one point (say b) in B after removing redundant points. Thus, P(A, B) contains iteration points from a to b-1 when b exists. Otherwise it contains iteration points from a to boundary. The same thing iteration points are included by the algorithm also. Thus base case is proved.\\
+
+Induction case (dimension = k):\\
+
+For each value of x, \\
+$\forall a \in A$ such that $x < first(a)$, $\forall y, not(a \preceq [x:y])$ (by Lemma1). \\
+Therefore these a's need not be considered.\\
+We have $A' = \{a \in A | first(a) \leq x\}$.\\
+By induction the partition will include those y where $\exists a' \in A'$ such that $a' \preceq y$\\
+$\forall a \in A', first(a) \leq x$ for all a in A' and there exists a' in A' such that a' <= y, exists a in A st a <= [x:y]
+
+For all b in B st first(b) > x, b not <= [x:y] for any y by Lemma1.
+B' includes all b in B st first(b) <= x.
+By induction, it will include only those points y where y not <= b' for all b' in B'
+y not <= b' => [x:y] <= [first(b):b']  (by Lemma 3)
+Thus, for all b in B, [x:y] not <= b.
+
+Thus, all the points included by the algorithm is same as the set of points defined by P(A,B)
 

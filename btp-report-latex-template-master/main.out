@@ -19,6 +19,13 @@
 \BOOKMARK [0][-]{chapter.5}{Method to calculate the number of partitions}{}% 19
 \BOOKMARK [1][-]{subsection.5.0.1}{Example}{chapter.5}% 20
 \BOOKMARK [0][-]{chapter.6}{Loop Generation Algorithm}{}% 21
-\BOOKMARK [1][-]{section.6.1}{Algorithm}{chapter.6}% 22
-\BOOKMARK [0][-]{chapter.7}{Future Work}{}% 23
-\BOOKMARK [0][-]{chapter*.9}{Bibliography}{}% 24
+\BOOKMARK [1][-]{section.6.1}{Notation}{chapter.6}% 22
+\BOOKMARK [1][-]{section.6.2}{Algorithm}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.3}{Example}{chapter.6}% 24
+\BOOKMARK [1][-]{section.6.4}{Proof of Correctness}{chapter.6}% 25
+\BOOKMARK [2][-]{subsection.6.4.1}{Notation}{section.6.4}% 26
+\BOOKMARK [2][-]{subsection.6.4.2}{Lemma1}{section.6.4}% 27
+\BOOKMARK [2][-]{subsection.6.4.3}{Lemma2}{section.6.4}% 28
+\BOOKMARK [2][-]{subsection.6.4.4}{Proof}{section.6.4}% 29
+\BOOKMARK [0][-]{chapter.7}{Future Work}{}% 30
+\BOOKMARK [0][-]{chapter*.9}{Bibliography}{}% 31
