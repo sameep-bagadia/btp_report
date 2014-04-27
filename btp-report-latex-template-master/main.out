@@ -26,6 +26,15 @@
 \BOOKMARK [2][-]{subsection.6.4.1}{Notation}{section.6.4}% 26
 \BOOKMARK [2][-]{subsection.6.4.2}{Lemma1}{section.6.4}% 27
 \BOOKMARK [2][-]{subsection.6.4.3}{Lemma2}{section.6.4}% 28
-\BOOKMARK [2][-]{subsection.6.4.4}{Proof}{section.6.4}% 29
-\BOOKMARK [0][-]{chapter.7}{Future Work}{}% 30
-\BOOKMARK [0][-]{chapter*.9}{Bibliography}{}% 31
+\BOOKMARK [2][-]{subsection.6.4.4}{Lemma3}{section.6.4}% 29
+\BOOKMARK [2][-]{subsection.6.4.5}{Proof}{section.6.4}% 30
+\BOOKMARK [0][-]{chapter.7}{Variable Dependence Distance}{}% 31
+\BOOKMARK [1][-]{section.7.1}{Algorithm}{chapter.7}% 32
+\BOOKMARK [1][-]{section.7.2}{Example}{chapter.7}% 33
+\BOOKMARK [1][-]{section.7.3}{Optimality of number of partitions created}{chapter.7}% 34
+\BOOKMARK [2][-]{subsection.7.3.1}{Comparison with Extended Cycle Shrinking Algorithm}{section.7.3}% 35
+\BOOKMARK [2][-]{subsection.7.3.2}{Proof of optimality}{section.7.3}% 36
+\BOOKMARK [0][-]{chapter.8}{Handling negative dependence distances}{}% 37
+\BOOKMARK [0][-]{chapter.9}{Parallelizing the Algorithm}{}% 38
+\BOOKMARK [0][-]{chapter.10}{Conclusion and Future Work}{}% 39
+\BOOKMARK [0][-]{chapter*.12}{Bibliography}{}% 40

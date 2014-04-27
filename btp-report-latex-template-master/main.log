@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.29)  22 APR 2014 22:13
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.29)  27 APR 2014 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -18,8 +18,8 @@ ian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, welsh, loaded
 .
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2011/texmf-dist/tex/latex/base/size12.clo
-File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2011/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -485,8 +485,10 @@ File: english.lbx 2011/06/08 v1.5 biblatex localization
 (./Chapters/introduction.aux) (./Chapters/literature_survey.aux)
 (./Chapters/motivation_for_optimality.aux)
 (./Chapters/notation_and_algorithm.aux) (./Chapters/no_of_partitions.aux)
-(./Chapters/loop_generation_algorithm.aux) (./Chapters/future_work.aux)
-(./references.aux))
+(./Chapters/loop_generation_algorithm.aux)
+(./Chapters/variable_dependence_distance.aux)
+(./Chapters/negative_distances.aux) (./Chapters/parallelizing_algorithm.aux)
+(./Chapters/future_work.aux) (./references.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
@@ -566,7 +568,7 @@ Package caption Info: End \AtBeginDocument code.
 \openout2 = `cover.aux'.
 
  (./cover.tex
-<Figures/logo.png, id=128, 301.125pt x 295.1025pt>
+<Figures/logo.png, id=164, 301.125pt x 295.1025pt>
 File: Figures/logo.png Graphic file (type png)
  <use Figures/logo.png>
 Package pdftex.def Info: Figures/logo.png used on input line 28.
@@ -644,42 +646,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--21
 
  []
 
-[2
 
-
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 22--23
 
  []
 
-<Figures/simple.jpg, id=201, 1965.3425pt x 1965.3425pt>
+[2
+
+
+
+] <Figures/simple.jpg, id=247, 1965.3425pt x 1965.3425pt>
 File: Figures/simple.jpg Graphic file (type jpg)
 
 <use Figures/simple.jpg>
 Package pdftex.def Info: Figures/simple.jpg used on input line 29.
-(pdftex.def)             Requested size: 175.49881pt x 175.49371pt.
+(pdftex.def)             Requested size: 161.9989pt x 161.99881pt.
 
-<Figures/selective.jpg, id=202, 1965.3425pt x 1965.3425pt>
+<Figures/selective.jpg, id=248, 1965.3425pt x 1965.3425pt>
 File: Figures/selective.jpg Graphic file (type jpg)
 
 <use Figures/selective.jpg>
 Package pdftex.def Info: Figures/selective.jpg used on input line 35.
-(pdftex.def)             Requested size: 175.49881pt x 175.49371pt.
+(pdftex.def)             Requested size: 161.9989pt x 161.99881pt.
 
-<Figures/true_distance.jpg, id=203, 1965.3425pt x 1965.3425pt>
+<Figures/true_distance.jpg, id=249, 1965.3425pt x 1965.3425pt>
 File: Figures/true_distance.jpg Graphic file (type jpg)
 
 <use Figures/true_distance.jpg>
 Package pdftex.def Info: Figures/true_distance.jpg used on input line 41.
-(pdftex.def)             Requested size: 175.49881pt x 175.49371pt.
+(pdftex.def)             Requested size: 161.9989pt x 161.99881pt.
 
-<Figures/extended.jpg, id=204, 1965.3425pt x 1965.3425pt>
+<Figures/extended.jpg, id=250, 1965.3425pt x 1965.3425pt>
 File: Figures/extended.jpg Graphic file (type jpg)
 
 <use Figures/extended.jpg>
 Package pdftex.def Info: Figures/extended.jpg used on input line 47.
-(pdftex.def)             Requested size: 175.49881pt x 175.49371pt.
+(pdftex.def)             Requested size: 161.9989pt x 161.99881pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 55--57
 
@@ -690,7 +692,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
-
+[3 <./Figures/simple.jpg> <./Figures/selective.jpg> <./Figures/true_distance.jp
+g> <./Figures/extended.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 65--67
 
  []
@@ -699,7 +702,7 @@ LaTeX Font Info:    Try loading font information for OMS+cmr on input line 70.
 (/usr/local/texlive/2011/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
@@ -711,24 +714,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 77--80
 
  []
 
-[3] [4 <./Figures/simple.jpg> <./Figures/selective.jpg> <./Figures/true_distanc
-e.jpg> <./Figures/extended.jpg>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
 
  []
 
-<Figures/variable1.jpg, id=222, 1965.3425pt x 1965.3425pt>
+<Figures/variable1.jpg, id=260, 1965.3425pt x 1965.3425pt>
 File: Figures/variable1.jpg Graphic file (type jpg)
 
 <use Figures/variable1.jpg>
 Package pdftex.def Info: Figures/variable1.jpg used on input line 88.
-(pdftex.def)             Requested size: 272.99881pt x 272.9869pt.
+(pdftex.def)             Requested size: 251.9989pt x 251.99481pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 91--92
 
  []
 
-[5 <./Figures/variable1.jpg>]
+[4]
 Underfull \hbox (badness 10000) in paragraph at lines 95--102
 
  []
@@ -743,7 +745,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 105--109
 
  []
 
-
+[5 <./Figures/variable1.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 110--113
 
  []
@@ -753,13 +755,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--117
 
  []
 
-<Figures/variable_eg.jpg, id=230, 1965.3425pt x 1965.3425pt>
+<Figures/variable_eg.jpg, id=275, 1965.3425pt x 1965.3425pt>
 File: Figures/variable_eg.jpg Graphic file (type jpg)
 
 <use Figures/variable_eg.jpg>
 Package pdftex.def Info: Figures/variable_eg.jpg used on input line 122.
-(pdftex.def)             Requested size: 195.0pt x 194.98634pt.
-) [6] [7 <./Figures/variable_eg.jpg>]
+(pdftex.def)             Requested size: 180.0pt x 179.99202pt.
+) [6 <./Figures/variable_eg.jpg>]
 \openout2 = `Chapters/motivation_for_optimality.aux'.
 
 
@@ -785,22 +787,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
-<Figures/fig1a.jpg, id=241, 1965.3425pt x 1965.3425pt>
+<Figures/fig1a.jpg, id=282, 1965.3425pt x 1965.3425pt>
 File: Figures/fig1a.jpg Graphic file (type jpg)
  <use Figures/fig1a.jpg>
 Package pdftex.def Info: Figures/fig1a.jpg used on input line 22.
-(pdftex.def)             Requested size: 195.0pt x 194.98634pt.
+(pdftex.def)             Requested size: 180.0pt x 179.99202pt.
 
-<Figures/fig1b.jpg, id=242, 1965.3425pt x 1965.3425pt>
+<Figures/fig1b.jpg, id=283, 1965.3425pt x 1965.3425pt>
 File: Figures/fig1b.jpg Graphic file (type jpg)
  <use Figures/fig1b.jpg>
 Package pdftex.def Info: Figures/fig1b.jpg used on input line 28.
-(pdftex.def)             Requested size: 195.0pt x 194.98634pt.
-) [8
+(pdftex.def)             Requested size: 180.0pt x 179.99202pt.
+) [7
 
 
 
-] [9 <./Figures/fig1a.jpg> <./Figures/fig1b.jpg>]
+] [8 <./Figures/fig1a.jpg> <./Figures/fig1b.jpg>]
 \openout2 = `Chapters/notation_and_algorithm.aux'.
 
 
@@ -831,20 +833,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--18
 
  []
 
-[10
 
-
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 21--28
 
  []
 
-<Figures/fig2.jpg, id=259, 1965.3425pt x 1965.3425pt>
+[9
+
+
+
+] <Figures/fig2.jpg, id=300, 1965.3425pt x 1965.3425pt>
 File: Figures/fig2.jpg Graphic file (type jpg)
- <use Figures/fig2.jpg>
+
+<use Figures/fig2.jpg>
 Package pdftex.def Info: Figures/fig2.jpg used on input line 32.
-(pdftex.def)             Requested size: 195.0pt x 194.98634pt.
+(pdftex.def)             Requested size: 180.0pt x 179.99202pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
@@ -860,7 +863,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--58
 
  []
 
-[11 <./Figures/fig2.jpg>]
+[10 <./Figures/fig2.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 61--69
 
  []
@@ -871,16 +874,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--74
  []
 
 
+Overfull \hbox (24.15913pt too wide) in paragraph at lines 78--111
+[][] 
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 114--115
 
  []
 
-
+[11]
 Underfull \hbox (badness 10000) in paragraph at lines 116--120
 
  []
 
-[12]
+
 Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
@@ -910,7 +918,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--142
 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 145--149
 
  []
@@ -920,7 +928,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 150--159
 
  []
 
-
+[12]
 Underfull \hbox (badness 10000) in paragraph at lines 161--162
 
  []
@@ -940,7 +948,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 176--37
 
  []
 
-[14] [15]
+[13]
 \openout2 = `Chapters/no_of_partitions.aux'.
 
  (./Chapters/no_of_partitions.tex
@@ -974,7 +982,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--28
 
  []
 
-[16
+[14
 
 
 
@@ -988,7 +996,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--39
 
  []
 
-[17]
+[15]
 \openout2 = `Chapters/loop_generation_algorithm.aux'.
 
  (./Chapters/loop_generation_algorithm.tex
@@ -1033,16 +1041,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
-[18
 
-
-
-]
 Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
+[16
 
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 27--29
 
  []
@@ -1077,12 +1085,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--63
 
  []
 
-[19]
+
 Underfull \hbox (badness 10000) in paragraph at lines 64--70
 
  []
 
-
+[17]
 Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
  []
@@ -1112,82 +1120,310 @@ Underfull \hbox (badness 10000) in paragraph at lines 96--159
 
  []
 
-[20] [21]) [22]
-\openout2 = `Chapters/future_work.aux'.
-
- (./Chapters/future_work.tex
-Chapter 7.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--3
+[18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 172--174
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--182
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 185--187
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 190--191
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 194--195
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--204
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 205--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--214
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+) [21]
+\openout2 = `Chapters/variable_dependence_distance.aux'.
+
+ (./Chapters/variable_dependence_distance.tex
+Chapter 7.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--25
+
+ []
+
+[22
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
+
+ []
+
+<Figures/variable_our.jpg, id=363, 1965.3425pt x 1965.3425pt>
+File: Figures/variable_our.jpg Graphic file (type jpg)
+
+<use Figures/variable_our.jpg>
+Package pdftex.def Info: Figures/variable_our.jpg used on input line 111.
+(pdftex.def)             Requested size: 180.0pt x 179.99202pt.
+
+<Figures/variable_ecs.jpg, id=364, 1965.3425pt x 1965.3425pt>
+File: Figures/variable_ecs.jpg Graphic file (type jpg)
+
+<use Figures/variable_ecs.jpg>
+Package pdftex.def Info: Figures/variable_ecs.jpg used on input line 117.
+(pdftex.def)             Requested size: 180.0pt x 179.99202pt.
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 131--132
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--143
+
+ []
+
+[24 <./Figures/variable_our.jpg> <./Figures/variable_ecs.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 144--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
+
+ []
+
+) [25]
+\openout2 = `Chapters/negative_distances.aux'.
+
+ (./Chapters/negative_distances.tex
+Chapter 8.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 6--41
+Underfull \hbox (badness 10000) in paragraph at lines 9--42
 
  []
 
-[23
+[26
+
+
+
+]
+\openout2 = `Chapters/parallelizing_algorithm.aux'.
+
+ (./Chapters/parallelizing_algorithm.tex
+Chapter 9.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
+
+ []
+
+) [27
+
+
+
+]
+\openout2 = `Chapters/future_work.aux'.
+
+ (./Chapters/future_work.tex
+Chapter 10.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 5--44
+
+ []
+
+[28
 
 
 
 ]
 \openout2 = `references.aux'.
 
- (./references.tex)pdfTeX warning (ext4): destination with the same identifier 
-(name{page.i}) has been already used, duplicate ignored
+ (./references.tex
+Overfull \hbox (1.66905pt too wide) in paragraph at lines 1--1
+[]  \OT1/cmr/m/n/10.95 AJAY SETHI, SUPRA-TIM BISWAS,   and AMITABHA SANYAL.   \
+  EX-
+ []
+
+)pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
+ been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.44 \include{references}
+l.47 \include{references}
                           [1
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (./main.aux (./cover.aux) (./abstract.aux)
 (./contents.aux) (./Chapters/introduction.aux)
 (./Chapters/literature_survey.aux) (./Chapters/motivation_for_optimality.aux)
 (./Chapters/notation_and_algorithm.aux) (./Chapters/no_of_partitions.aux)
-(./Chapters/loop_generation_algorithm.aux) (./Chapters/future_work.aux)
-(./references.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 46.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 46.
+(./Chapters/loop_generation_algorithm.aux)
+(./Chapters/variable_dependence_distance.aux)
+(./Chapters/negative_distances.aux) (./Chapters/parallelizing_algorithm.aux)
+(./Chapters/future_work.aux) (./references.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: CEA6A4971518D6E557EFB09000FFD9D9;1971.
+(rerunfilecheck)             Checksum: D02D24C4E06386EAD1C6CAF6D40DD003;2625.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
- ) 
+ )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 176 ({)
+### bottom level 
 Here is how much of TeX's memory you used:
- 11826 strings out of 493633
- 188051 string characters out of 3143377
- 382564 words of memory out of 3000000
- 14856 multiletter control sequences out of 15000+200000
- 10291 words of font info for 37 fonts, out of 3000000 for 9000
+ 11894 strings out of 493633
+ 189648 string characters out of 3143377
+ 383250 words of memory out of 3000000
+ 14884 multiletter control sequences out of 15000+200000
+ 10598 words of font info for 38 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 37i,12n,51p,853b,1151s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
-></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
-</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></
-usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
-local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
-al/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/
-texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/t
-exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on main.pdf (28 pages, 1635368 bytes).
+ 37i,12n,51p,1030b,1203s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx12.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmcsc10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmmi8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+8.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.p
+fb></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pf
+b></usr/local/texlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+>
+Output written on main.pdf (33 pages, 1971950 bytes).
 PDF statistics:
- 383 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 71 named destinations out of 1000 (max. 500000)
- 299 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 462 PDF objects out of 1000 (max. 8388607)
+ 399 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 500000)
+ 381 words of extra memory for PDF output out of 10000 (max. 10000000)
 

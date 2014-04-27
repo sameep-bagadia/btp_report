@@ -10,54 +10,72 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Example}{2}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Extended Cycle Shrinking Algorithm}{3}{section.2.2}
+\contentsline {section}{\numberline {2.2}Extended Cycle Shrinking Algorithm}{4}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.1}Constant Dependence Distances}{3}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Constant Dependence Distances}{4}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.2.2}Variable Dependence Distances}{5}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Variable Dependence Distances}{4}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Analysis of Extended Cycle Shrinking Algorithm}{8}{chapter.3}
+\contentsline {chapter}{\numberline {3}Analysis of Extended Cycle Shrinking Algorithm}{7}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Optimal Partitioning Algorithm}{10}{chapter.4}
+\contentsline {chapter}{\numberline {4}Optimal Partitioning Algorithm}{9}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Notation}{10}{section.4.1}
+\contentsline {section}{\numberline {4.1}Notation}{9}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1.1}Example}{11}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Example}{10}{subsection.4.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Algorithm to generate the sets of points}{11}{section.4.2}
+\contentsline {section}{\numberline {4.2}Algorithm to generate the sets of points}{10}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2.1}Example}{12}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.1}Example}{11}{subsection.4.2.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Proof of Correctness}{12}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.1}Proof of Lemma 1}{13}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Proof of Lemma 1}{12}{subsection.4.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.3.2}Proof of Lemma 2}{14}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}Proof of Lemma 2}{12}{subsection.4.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Proof of Optimality}{14}{section.4.4}
+\contentsline {section}{\numberline {4.4}Proof of Optimality}{13}{section.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Method to calculate the number of partitions}{16}{chapter.5}
+\contentsline {chapter}{\numberline {5}Method to calculate the number of partitions}{14}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {5.0.1}Example}{16}{subsection.5.0.1}
+\contentsline {subsection}{\numberline {5.0.1}Example}{14}{subsection.5.0.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Loop Generation Algorithm}{18}{chapter.6}
+\contentsline {chapter}{\numberline {6}Loop Generation Algorithm}{16}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Notation}{18}{section.6.1}
+\contentsline {section}{\numberline {6.1}Notation}{16}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Algorithm}{19}{section.6.2}
+\contentsline {section}{\numberline {6.2}Algorithm}{17}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Example}{20}{section.6.3}
+\contentsline {section}{\numberline {6.3}Example}{18}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Proof of Correctness}{22}{section.6.4}
+\contentsline {section}{\numberline {6.4}Proof of Correctness}{20}{section.6.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.1}Notation}{22}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.1}Notation}{20}{subsection.6.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.2}Lemma1}{22}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.2}Lemma1}{20}{subsection.6.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.3}Lemma2}{22}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.3}Lemma2}{20}{subsection.6.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.4.4}Proof}{22}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.4}Lemma3}{20}{subsection.6.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Future Work}{23}{chapter.7}
+\contentsline {subsection}{\numberline {6.4.5}Proof}{20}{subsection.6.4.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{i}{chapter*.9}
+\contentsline {chapter}{\numberline {7}Variable Dependence Distance}{22}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Algorithm}{22}{section.7.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Example}{23}{section.7.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Optimality of number of partitions created}{24}{section.7.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.1}Comparison with Extended Cycle Shrinking Algorithm}{24}{subsection.7.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.2}Proof of optimality}{24}{subsection.7.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Handling negative dependence distances}{26}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Parallelizing the Algorithm}{27}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Conclusion and Future Work}{28}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{i}{chapter*.12}
